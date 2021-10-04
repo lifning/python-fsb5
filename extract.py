@@ -95,6 +95,7 @@ class FSBExtractor:
 
 		is_resource = False
 		index = 0
+		data = data[data.index(b'FSB5'):]
 		while data:
 			fsb, ext = self.load_fsb(data)
 
